@@ -421,6 +421,56 @@ input[type="search"] {
   }
 }
 
+/* 테블릿 디바이스 (Tablet Device) */
+@media (min-width: 640px) and (max-width: 768px) {
+  /* 태블릿 메인 콘텐츠 */
+  .appMain {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: var(--spacing-md);
+  }
+
+  /* 태블릿 추천 서적 */
+  .book {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  /* 태블릿 새소식 */
+  .news {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* 태블릿 게시판 */
+  .board {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  /* 태블릿 인기사이트 */
+  .favorite {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  /* 태블릿 twitter */
+  .twitter {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
 /* 데스크탑 디바이스 (Desktop Device) */
 @media (min-width: 769px) {
   /* 데스크탑 헤더 */
@@ -487,6 +537,7 @@ input[type="search"] {
       "book book book book . board board board board board board board";
   }
 }
+
 /* 고해상도 배경이미지 미디어쿼리 */
 @media (-webkit-min-device-pixel-ratio: 2),
   (min--moz-device-pixel-ratio: 2),
